@@ -29,7 +29,7 @@ public class ClientJDBCRepository {
 		}
 		
 	}
-	public List < Client > getAll(){
+	public List < Client > getAllForNow(){
 		return jdbcTemplate.query("select * from client", new ClientRowMapper());
 	}
 	
